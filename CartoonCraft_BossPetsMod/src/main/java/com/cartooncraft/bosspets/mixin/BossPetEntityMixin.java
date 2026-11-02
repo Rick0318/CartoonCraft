@@ -1,7 +1,14 @@
 package com.cartooncraft.bosspets.mixin;
 
 import com.cartooncraft.bosspets.BossPetsItems;
+import net.minecraft.entity.mob.ElderGuardianEntity;
+import net.minecraft.entity.mob.EvokerEntity;
 import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.mob.RavagerEntity;
+import net.minecraft.entity.mob.ShulkerEntity;
+import net.minecraft.entity.mob.WardenEntity;
+import net.minecraft.entity.boss.WitherEntity;
+import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -79,34 +86,34 @@ public abstract class BossPetEntityMixin {
     }
 
     private boolean isBoss(MobEntity entity) {
-        return entity instanceof net.minecraft.entity.mob.WardenEntity
-                || entity instanceof net.minecraft.entity.boss.dragon.EnderDragonEntity
-                || entity instanceof net.minecraft.entity.boss.WitherEntity
-                || entity instanceof net.minecraft.entity.boss.ElderGuardianEntity
-                || entity instanceof net.minecraft.entity.mob.RavagerEntity
-                || entity instanceof net.minecraft.entity.mob.EvokerEntity
-                || entity instanceof net.minecraft.entity.mob.ShulkerEntity;
+        return entity instanceof WardenEntity
+                || entity instanceof EnderDragonEntity
+                || entity instanceof WitherEntity
+                || entity instanceof ElderGuardianEntity
+                || entity instanceof RavagerEntity
+                || entity instanceof EvokerEntity
+                || entity instanceof ShulkerEntity;
     }
 
     private int getTameCost(MobEntity entity) {
-        if (entity instanceof net.minecraft.entity.boss.dragon.EnderDragonEntity) return 8;
-        if (entity instanceof net.minecraft.entity.boss.WitherEntity) return 7;
-        if (entity instanceof net.minecraft.entity.mob.WardenEntity) return 5;
-        if (entity instanceof net.minecraft.entity.boss.ElderGuardianEntity) return 4;
-        if (entity instanceof net.minecraft.entity.mob.RavagerEntity) return 3;
-        if (entity instanceof net.minecraft.entity.mob.EvokerEntity) return 3;
-        if (entity instanceof net.minecraft.entity.mob.ShulkerEntity) return 2;
+        if (entity instanceof EnderDragonEntity) return 8;
+        if (entity instanceof WitherEntity) return 7;
+        if (entity instanceof WardenEntity) return 5;
+        if (entity instanceof ElderGuardianEntity) return 4;
+        if (entity instanceof RavagerEntity) return 3;
+        if (entity instanceof EvokerEntity) return 3;
+        if (entity instanceof ShulkerEntity) return 2;
         return 3;
     }
 
     private String getBossName(MobEntity entity) {
-        if (entity instanceof net.minecraft.entity.mob.WardenEntity) return "Warden";
-        if (entity instanceof net.minecraft.entity.boss.dragon.EnderDragonEntity) return "Ender Dragon";
-        if (entity instanceof net.minecraft.entity.boss.WitherEntity) return "Wither";
-        if (entity instanceof net.minecraft.entity.boss.ElderGuardianEntity) return "Elder Guardian";
-        if (entity instanceof net.minecraft.entity.mob.RavagerEntity) return "Ravager";
-        if (entity instanceof net.minecraft.entity.mob.EvokerEntity) return "Evoker";
-        if (entity instanceof net.minecraft.entity.mob.ShulkerEntity) return "Shulker";
+        if (entity instanceof WardenEntity) return "Warden";
+        if (entity instanceof EnderDragonEntity) return "Ender Dragon";
+        if (entity instanceof WitherEntity) return "Wither";
+        if (entity instanceof ElderGuardianEntity) return "Elder Guardian";
+        if (entity instanceof RavagerEntity) return "Ravager";
+        if (entity instanceof EvokerEntity) return "Evoker";
+        if (entity instanceof ShulkerEntity) return "Shulker";
         return "Boss";
     }
 }
