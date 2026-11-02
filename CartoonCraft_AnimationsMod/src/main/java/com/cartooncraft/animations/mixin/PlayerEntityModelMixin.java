@@ -1,7 +1,6 @@
 package com.cartooncraft.animations.mixin;
 
 import com.cartooncraft.animations.CartoonTransformRegistry;
-import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,10 +13,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class PlayerEntityModelMixin<T extends LivingEntity> {
 
     @Inject(method = "setAngles", at = @At("TAIL"))
-    private void cartooncraft$setAngles(T entity, float limbAngle, float limbDistance,
-                                        float animationProgress, float headYaw, float headPitch,
+    private void cartooncraft$setAngles(T entity,
+                                        float limbAngle,
+                                        float limbDistance,
+                                        float animationProgress,
+                                        float headYaw,
+                                        float headPitch,
                                         CallbackInfo ci) {
-        if (!(entity instanceof PlayerEntity)) return;
+        if (!(entity instanceof PlayerEntity)) {
+            return;
+        }
 
         PlayerEntityModel<?> model = (PlayerEntityModel<?>) (Object) this;
         if (model.body == null || model.head == null || model.leftArm == null || model.rightArm == null || model.leftLeg == null || model.rightLeg == null) {
