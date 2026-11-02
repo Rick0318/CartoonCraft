@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cartooncraft:boss_essence",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:use_duration": 32,
+      "minecraft:icon": {
+        "texture": "boss_essence"
+      },
+      "minecraft:display_name": {
+        "value": "?dEsencia de Jefe"
+      },
+      "minecraft:tooltip_text": {
+        "value": "Potencia a tu mascota-jefe. Sube 1 nivel por uso."
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.cartooncraft.animations.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "PlayerEntityModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

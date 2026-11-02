@@ -1,0 +1,74 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cartooncraft:wither_pet",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cartooncraft:tamed": {
+        "minecraft:tameable": {
+          "probability": 0.0,
+          "tame_items": "cartooncraft:boss_soul_gem"
+        },
+        "minecraft:follow_owner": {
+          "speed_multiplier": 1.1,
+          "start_distance": 10.0,
+          "stop_distance": 2.0
+        },
+        "minecraft:sit": {},
+        "minecraft:health": {
+          "value": 280,
+          "max": 280
+        }
+      },
+      "cartooncraft:level_up": {
+        "minecraft:attack": {
+          "damage": 28
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "boss_pet",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 280,
+        "max": 280
+      },
+      "minecraft:attack": {
+        "damage": 28
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:navigation.walk": {},
+      "minecraft:can_climb": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:persistent": {}
+    },
+    "events": {
+      "cartooncraft:on_tame": {
+        "add": {
+          "component_groups": [
+            "cartooncraft:tamed"
+          ]
+        }
+      },
+      "cartooncraft:level_up": {
+        "add": {
+          "component_groups": [
+            "cartooncraft:level_up"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "cartooncraft_bosspets:boss_soul_gem"
+    },
+    "title": "?Primer Jefe Domado!",
+    "description": "Doma a un jefe y convi?rtelo en tu mascota.",
+    "frame": "task",
+    "show_toast": true
+  },
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "has_tether": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cartooncraft_bosspets:toon_tether"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

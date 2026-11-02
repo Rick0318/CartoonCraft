@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SLS",
+    "LBL",
+    "SLS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "L": {
+      "item": "minecraft:string"
+    },
+    "B": {
+      "item": "cartooncraft_bosspets:boss_essence"
+    }
+  },
+  "result": {
+    "item": "cartooncraft_bosspets:toon_tether",
+    "count": 1
+  }
+}

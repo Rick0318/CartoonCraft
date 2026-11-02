@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "cartooncraft_bosspets",
+  "version": "1.0.0",
+  "name": "CartoonCraft Boss Pets",
+  "description": "Domina a los jefes y ll?valos como mascotas. Potencialos con la Esencia de Jefe.",
+  "authors": [
+    "CartoonCraft Team"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cartooncraft.bosspets.BossPetsMod"
+    ],
+    "client": [
+      "com.cartooncraft.bosspets.BossPetsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

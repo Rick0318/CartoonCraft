@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "cartooncraft_animations",
+  "version": "1.0.0",
+  "name": "CartoonCraft Animations",
+  "description": "Movimientos cartoon: squash & stretch, swing exagerado, idle bounce",
+  "authors": [
+    "CartoonCraft Team"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/cartooncraft_animations/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.cartooncraft.animations.CartoonAnimationsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  },
+  "recommends": {
+    "figura": "*"
+  }
+}

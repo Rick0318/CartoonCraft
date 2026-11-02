@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {
+      "item": "cartooncraft_bosspets:boss_essence"
+    },
+    "title": "?Bestia M?xima!",
+    "description": "Lleva a tu mascota-jefe al nivel 10.",
+    "frame": "challenge",
+    "show_toast": true
+  },
+  "parent": "cartooncraft_bosspets:first_pet",
+  "criteria": {
+    "level_10": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

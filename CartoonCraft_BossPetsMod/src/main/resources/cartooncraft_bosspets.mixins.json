@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.cartooncraft.bosspets.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BossPetEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

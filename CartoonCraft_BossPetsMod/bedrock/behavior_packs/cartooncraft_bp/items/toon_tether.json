@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cartooncraft:toon_tether",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "toon_crown"
+      },
+      "minecraft:display_name": {
+        "value": "?aCorrea Cartoon"
+      },
+      "minecraft:tooltip_text": {
+        "value": "Invoca o guarda a tu mascota-jefe."
+      }
+    }
+  }
+}

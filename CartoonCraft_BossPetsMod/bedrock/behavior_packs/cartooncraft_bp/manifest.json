@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "CartoonCraft Boss Pets - Doma a los jefes",
+    "name": "CartoonCraft Boss Pets",
+    "uuid": "e5f6a7b8-c9d0-1234-efab-345678901234",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Boss Pets BP",
+      "type": "data",
+      "uuid": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
