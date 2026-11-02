@@ -1,7 +1,6 @@
 package com.cartooncraft.bosspets;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +13,6 @@ public class BossPetsMod implements ModInitializer {
         BossPetsRegistry.registerAll();
         BossPetsItems.registerAll();
         BossPetsGoals.registerAll();
-        LOGGER.info("[CartoonCraft Boss Pets] Mod inicializado. ?A domesticar jefes!");
+        LOGGER.info("[CartoonCraft] Boss Pets initialized.");
     }
 }
