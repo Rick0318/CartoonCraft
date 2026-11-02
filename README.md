@@ -1,135 +1,58 @@
-# 🎨 CartoonCraft — Minecraft Mod Pack
+# CartoonCraft Legacy Archive
+# Archivo Histórico de CartoonCraft
 
-> Pack completo de mods, texturas, shaders y animaciones estilo cartoon para Minecraft Java y Bedrock.
+## Español
 
----
+### Descripción
+Este repositorio se conserva como archivo histórico del proyecto original combinado.
 
-## Estado actual del proyecto
+Fue el repositorio inicial donde se mezclaron todos los contenidos, pero ahora el proyecto está dividido por plataforma para mantenerlo ordenado y funcional.
 
-Este repositorio ya quedó corregido en la parte más importante del código:
+### Estado actual
+Actualmente el desarrollo activo está dividido en dos repositorios separados:
 
-- Se reparó la base de los mods Fabric de Java.
-- Se reforzó la lógica de animación del jugador.
-- Se dejó estable la estructura del sistema de Boss Pets.
-- Se corrigieron los puntos de incompatibilidad más críticos del proyecto.
-- Se ordenó la configuración de Gradle para Fabric 1.21.4.
+- Java Edition: https://github.com/Rick0318/CartoonCraft-Java
+- Bedrock Edition: https://github.com/Rick0318/CartoonCraft-Bedrock
 
-La pieza visual y generativa del proyecto sigue siendo la parte más fuerte del repositorio: texturas, shader, concepto visual y estructura del pack. El siguiente paso real y profesional es validar el proyecto con compilación real de Fabric y pruebas en el juego.
+### Importante
+Este repositorio ya no se usa como repositorio principal ni activo.
 
----
+Se conserva únicamente como referencia histórica del proyecto original.
 
-## 📦 Contenido del repositorio
+### Motivo de la división
+La separación por plataforma fue necesaria porque:
+- Java Edition usa un sistema de renderizado y shaders distinto
+- Bedrock Edition usa otro sistema de recursos, comportamiento y renderizado
+- Mezclar ambos en un mismo proyecto causaba incompatibilidades técnicas y mantenimiento confuso
 
-| Archivo | Descripción | Plataforma |
-|---|---|---|
-| `CartoonCraft_TexturePack_JAVA.zip` | Texture pack cartoon | Java Edition |
-| `CartoonCraft_TexturePack_BEDROCK.zip` | Texture pack cartoon | Bedrock Edition |
-| `CartoonCraft_TexturePack.mcpack` | Texture pack (doble clic para instalar) | Bedrock Edition |
-| `CartoonCraft_Shader.zip` | Shader cel-shading | Java (Iris/OptiFine) |
-| `CartoonCraft_AnimationsMod_JAVA.zip` | Mod de movimientos cartoon | Java Fabric |
-| `CartoonCraft_AnimationsMod_BEDROCK.zip` | Animaciones cartoon | Bedrock Edition |
-| `CartoonCraft_AnimationsMod.mcpack` | Animaciones (doble clic para instalar) | Bedrock Edition |
-| `CartoonCraft_BossPetsMod_JAVA.zip` | Mod mascotas-jefe | Java Fabric |
-| `CartoonCraft_BossPetsMod_BEDROCK.zip` | Mascotas-jefe | Bedrock Edition |
-| `CartoonCraft_BossPetsMod.mcaddon` | Mascotas-jefe (doble clic para instalar) | Bedrock Edition |
+### Nota final
+Este repo funciona como archivo histórico del desarrollo original, mientras que el contenido activo sigue en sus repositorios separados.
 
 ---
 
-## 🎨 Texture Pack — CartoonCraft
+## English
 
-Estilo cartoon moderado: colores saturados, contornos suaves y relieve visible en los bloques que lo necesitan.
+### Description
+This repository is preserved as a historical archive of the original combined project.
 
-### Características
-- ✅ Resolución 16×16
-- ✅ Contorno cartoon en bloques
-- ✅ Highlight superior + sombra inferior
-- ✅ Relieve visual en piedra, madera, ladrillo, netherrack y obsidiana
+It was the initial repository where all content was mixed together, but the project is now split by platform to keep it organized and functional.
 
----
+### Current status
+The active development is currently divided into two separate repositories:
 
-## 🌟 Shader — CartoonCraft Cel Shading
+- Java Edition: https://github.com/Rick0318/CartoonCraft-Java
+- Bedrock Edition: https://github.com/Rick0318/CartoonCraft-Bedrock
 
-Compatible con Iris 1.7+ y OptiFine HD U I5+.
+### Important
+This repository is no longer used as the main or active development repository.
 
-### Efectos
-- Cel-shading con bandas de luz
-- Outline automático
-- Cielo cartoon cuantizado
-- Agua con brillo tipo toon
-- Niebla suave y estilizada
-- Sombras mejoradas
+It is preserved only as a historical reference to the original combined project.
 
----
+### Reason for the split
+The split by platform was necessary because:
+- Java Edition uses a different rendering pipeline and shader system
+- Bedrock Edition uses a different resource, behavior, and rendering system
+- Mixing both in the same project caused technical incompatibilities and confusing maintenance
 
-## 🎬 Mod de Animaciones — CartoonCraft Animations
-
-Movimientos cartoon con squash & stretch para el jugador.
-
-| Animación | Efecto cartoon |
-|---|---|
-| Caminar | Balanceo de brazos y rebote vertical |
-| Correr | Inclinación y swing más agresivo |
-| Saltar | Squash al despegar y stretch en el aire |
-| Nadar | Movimiento exagerado |
-| Agacharse | Cuerpo aplastado |
-| Idle | Balanceo suave de cabeza y brazos |
-
----
-
-## 🐉 Mod Boss Pets — CartoonCraft Boss Pets
-
-¡Doma a los jefes más poderosos y llévalos como mascota!
-
-### Jefes domesticables
-- Warden
-- Ender Dragon
-- Wither
-- Elder Guardian
-- Ravager
-- Evoker
-- Shulker
-
-### Ítems principales
-- Boss Soul Gem
-- Boss Essence
-- Toon Tether
-
----
-
-## 🔧 Instalación
-
-### Java Edition (Fabric 1.21.4)
-1. Instala Fabric Loader 0.16.5+
-2. Instala Fabric API
-3. Copia los .zip de mods en `.minecraft/mods/`
-4. Copia `CartoonCraft_TexturePack_JAVA.zip` en `.minecraft/resourcepacks/`
-5. Copia `CartoonCraft_Shader.zip` en `.minecraft/shaderpacks/`
-
-### Bedrock Edition (Windows)
-1. Doble clic en `CartoonCraft_TexturePack.mcpack`
-2. Doble clic en `CartoonCraft_AnimationsMod.mcpack`
-3. Doble clic en `CartoonCraft_BossPetsMod.mcaddon`
-4. Activa los paquetes en tu mundo
-
-> El shader no está disponible para Bedrock Edition.
-
----
-
-## 📋 Requisitos
-
-| | Java Edition | Bedrock Edition |
-|---|---|---|
-| Versión Minecraft | 1.21.4 | 1.21.0+ |
-| Loader | Fabric 0.16.5+ | No necesario |
-| API | Fabric API | No necesario |
-| Shader | Iris 1.7+ / OptiFine | ❌ No compatible |
-
----
-
-## 📜 Licencia
-
-MIT License — libre para usar, modificar y distribuir.
-
----
-
-*Estado actual: proyecto mejorado y reordenado en estructura, pendiente de validación final con compilación real.*
+### Final note
+This repo serves as the historical archive of the original development, while the active content continues in its separate repositories.
